@@ -1,13 +1,6 @@
 import Head from 'next/head';
-// import Favicons from './../components/Favicon'
 
-import {
-  iconGithub,
-  iconLinkedIn,
-  iconTwitter,
-  iconFacebook,
-  iconInstagram,
-} from '../components/Icon';
+import { iconLinkedIn, iconFacebook, iconInstagram } from '../components/Icon';
 
 export default function Home() {
   return (
@@ -15,10 +8,10 @@ export default function Home() {
       <Head>
         <title>Mauro Vigliero</title>
       </Head>
-      <div className='w-full h-full justify-center content-center bg-800'>
+      <div className='w-full h-full justify-center content-center'>
         <div>
           <header className='flex'>
-            <img src='/mau.jpg' className='w-12 rounded-full' />
+            <img src='/mau.jpg' className='w-8 rounded-full' />
             <h1 className='text-800'>Mauro Vigliero</h1>
           </header>
           <main className='border-style: solid'>
