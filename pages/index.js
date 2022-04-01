@@ -28,8 +28,8 @@ export default function Home() {
         <title>Mauro Vigliero</title>
         <Favicons />
       </Head>
-      <div className='w-full h-screen flex justify-center items-center bg-gray '>
-        <div className='h-max w-1/2 border-t-2 border-l-2 border-r-2 border-white rounded-t-lg'>
+      <div className='w-full min-h-screen flex justify-center items-center bg-gray '>
+        <div className='h-max w-1/2 border-t-2 border-l-2 border-r-2 border-white rounded-t-lg m-4 lg:m-0 min-w-fit'>
           <header className='flex items-center  py-6'>
             <div className='mx-4'>
               <img src='/mau.jpg' className='w-16 rounded-full' />
@@ -37,18 +37,18 @@ export default function Home() {
             <h1 className='text-white text-lg'>Mauro Vigliero</h1>
           </header>
           <main>
-            <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2 font-semibold'>E-mail</div>
+            <div className='py-6 bg-white  p-6 border-b-2 border-gray flex flex-col lg:flex-row'>
+              <div className='w-1/2 font-bold lg:font-semibold mb-2 lg:mb-0'>E-mail</div>
               <div>mauro.vigliero@loesen.co</div>
             </div>
-            <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2 font-semibold'>Profesion</div>
+            <div className='py-6 bg-white flex flex-col lg:flex-row p-6 border-b-2 border-gray'>
+              <div className='w-1/2 font-bold lg:font-semibold mb-2 lg:mb-0'>Profesion</div>
               <div>
-                Developer <strong> Full-stack </strong>
+                Full-stack developer 
               </div>
             </div>
-            <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2 font-semibold flex items-center'>
+            <div className='py-6 bg-white flex flex-col lg:flex-row p-6 border-b-2 border-gray'>
+              <div className='w-1/2 font-bold lg:font-semibold flex items-center  mb-2 lg:mb-0'>
                 <span>Experience</span>
               </div>
               <div>
@@ -57,8 +57,8 @@ export default function Home() {
                 <p>Back-end</p>
               </div>
             </div>
-            <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2 font-semibold flex items-center'>
+            <div className='py-6 bg-white flex flex-col lg:flex-row p-6 border-b-2 border-gray'>
+              <div className='w-1/2 font-bold lg:font-semibold flex items-center  mb-2 lg:mb-0'>
                 <span>Skills</span>
               </div>
               <div className='flex'>
@@ -74,9 +74,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='bg-white flex p-6'>
-              <div className='w-1/2 font-semibold'>Social</div>
-              <div className='flex justify-center items-center'>
+            <div className='bg-white flex flex-col lg:flex-row p-6'>
+              <div className='w-1/2 font-bold lg:font-semibold  mb-2 lg:mb-0'>Social</div>
+              <div className='flex flex-row  lg:justify-center items-center'>
                 {social.map((Data) => (
                   <a href={Data.href} target='_blank'>
                     <Data.icon className='text-black h-8 mr-6 text-center' />
