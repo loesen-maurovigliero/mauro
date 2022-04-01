@@ -1,6 +1,6 @@
 
   // Facebook
-  export const iconFacebook = (props) => (
+  export const iconFacebook = () => (
     <svg fill='currentColor' viewBox='0 0 24 24' >
       <path
         fillRule='evenodd'
@@ -11,7 +11,7 @@
   );
   
   // Instagram
-  export const iconInstagram = (props) => (
+  export const iconInstagram = () => (
     <svg fill='currentColor' viewBox='0 0 24 24' >
       <path
         fillRule='evenodd'
@@ -24,7 +24,7 @@
 
   
   // LinkedIn
-  export const iconLinkedIn = (props) => (
+  export const iconLinkedIn = () => (
     <svg fill='currentColor' viewBox='0 0 24 24' >
       <path d='M4.2,7L4.2,7L4.2,7c1.4,0,2.3-1,2.3-2.2c0-1.3-0.9-2.2-2.2-2.2S2,3.5,2,4.8C2,6,2.9,7,4.2,7z M2,8.5h4.5v13H2V8.5z M22,13.2c0-2.6-2.1-4.8-4.8-4.8c-1.5,0-2.9,0.7-3.8,1.8V8.5H9v13h4.5V14l0,0c0-1.1,0.9-2,2-2s2,0.9,2,2v7.5H22C22,21.5,22,14,22,13.2z' />
     </svg>
