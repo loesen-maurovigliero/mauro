@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Favicons from './../components/Favicons'
+import Head from 'next/head';
+import Favicons from './../components/Favicons';
 
 import { iconLinkedIn, iconFacebook, iconInstagram } from '../components/Icon';
 const social = [
@@ -27,27 +27,27 @@ export default function Home() {
         <title>Mauro Vigliero</title>
         <Favicons />
       </Head>
-      <body className='w-full h-screen flex justify-center items-center bg-gray '>
+      <div className='w-full h-screen flex justify-center items-center bg-gray '>
         <div className='h-max w-1/2 border-t-2 border-l-2 border-r-2 border-white rounded-t-lg'>
           <header className='flex items-center  py-6'>
             <div className='mx-4'>
-              <img src='/mau.jpg' className='w-16 rounded-full border-white '/>
+              <img src='/mau.jpg' className='w-16 rounded-full' />
             </div>
             <h1 className='text-white text-lg'>Mauro Vigliero</h1>
           </header>
           <main>
             <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2'>E-mail</div>
+              <div className='w-1/2 font-semibold'>E-mail</div>
               <div>mauro.vigliero@loesen.co</div>
             </div>
             <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2'>Profesion</div>
+              <div className='w-1/2 font-semibold'>Profesion</div>
               <div>
                 Developer <strong> Full-stack </strong>
               </div>
             </div>
             <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2 flex items-center'>
+              <div className='w-1/2 font-semibold flex items-center'>
                 <span>Experience</span>
               </div>
               <div>
@@ -57,7 +57,7 @@ export default function Home() {
               </div>
             </div>
             <div className='py-6 bg-white flex p-6 border-b-2 border-gray'>
-              <div className='w-1/2 flex items-center'>
+              <div className='w-1/2 font-semibold flex items-center'>
                 <span>Skills</span>
               </div>
               <div className='flex'>
@@ -74,17 +74,18 @@ export default function Home() {
               </div>
             </div>
             <div className='bg-white flex p-6'>
-              <div className='w-1/2'>Social</div>
+              <div className='w-1/2 font-semibold'>Social</div>
               <div>
-                {social.map((data) => {
-                  <data.icon />;
+                {social.map((Data) => {
+                  <a href={Data.href}>
+                    <Data.icon className='text-black h-8' />
+                  </a>;
                 })}
               </div>
             </div>
           </main>
         </div>
-      </body>
+      </div>
     </>
   );
 }
-
