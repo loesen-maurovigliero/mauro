@@ -1,7 +1,8 @@
+/* eslint-disable react/jsx-key */
 import Head from 'next/head';
 import Favicons from './../components/Favicons';
-
 import { iconLinkedIn, iconFacebook, iconInstagram } from '../components/Icon';
+
 const social = [
   {
     name: 'instagram',
@@ -75,12 +76,12 @@ export default function Home() {
             </div>
             <div className='bg-white flex p-6'>
               <div className='w-1/2 font-semibold'>Social</div>
-              <div>
-                {social.map((Data) => {
-                  <a href={Data.href}>
-                    <Data.icon className='text-black h-8' />
-                  </a>;
-                })}
+              <div className='flex justify-center items-center'>
+                {social.map((Data) => (
+                  <a href={Data.href} target='_blank'>
+                    <Data.icon className='text-black h-8 mr-6 text-center' />
+                  </a>
+                ))}
               </div>
             </div>
           </main>
