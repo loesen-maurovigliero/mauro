@@ -29,8 +29,8 @@ export default function Home() {
         <title>Mauro Vigliero</title>
         <Favicons />
       </Head>
-      <div className='w-full min-h-screen grid grid-cols-4 bg-gray md:p-4 p-1'>
-        <div className='h-max col-span-4 col-start-1 md:col-span-2 md:col-start-2 border-t-2 border-l-2 border-r-2 border-white rounded-t-lg m-4 lg:m-0 min-w-fit'>
+      <div className='w-full min-h-screen grid grid-cols-4 bg-gray lg:p-4 '>
+        <div className='h-max col-span-4 col-start-1 lg:col-span-2 lg:col-start-2 border-t-2 border-l-2 border-r-2 border-white rounded-t-lg m-4 lg:m-0 min-w-fit'>
           <header className='flex items-center py-6'>
             <div className='mx-4'>
               <img src='/mau.jpg' className='w-16 rounded-full' />
